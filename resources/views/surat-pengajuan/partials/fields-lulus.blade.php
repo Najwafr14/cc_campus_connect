@@ -1,0 +1,1 @@
+<p class="text-gray-600">Tidak ada data yang perlu diisi untuk surat ini.</p>
