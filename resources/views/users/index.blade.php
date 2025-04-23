@@ -167,6 +167,7 @@
                                         <td>{{ $user->email }}</td>
                                         <td>
                                             <form method="POST" action="{{ route('tu.users.update-role', $user) }}" class="d-inline">
+                                                @csrf
                                                 <select name="role_id" onchange="this.form.submit()" class="form-select form-select-sm role-select">
                                                     @foreach($roles as $role)
                                                         <option value="{{ $role->id }}" {{ $user->role_id == $role->id ? 'selected' : '' }}>
